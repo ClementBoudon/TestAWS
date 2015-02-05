@@ -6,11 +6,11 @@ mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
 
 $string = 'Chaine aleatoire : '.rand(0,999);
-
+$string .= 'Êl síla erin lû e-govaned vîn.';
 $link = new PDO(
     'mysql:host=localhost;dbname=testaws;charset=utf8mb4',
-    'mysqlusername',
-    'passwordenclair'
+    'root',
+    'root'
 );
 
 $handle = $link->prepare('insert into TestTable (body) values (?)');
