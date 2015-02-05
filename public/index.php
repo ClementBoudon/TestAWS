@@ -7,8 +7,10 @@ mb_http_output('UTF-8');
 
 $string = 'Chaine aleatoire : '.rand(0,999);
 $string .= 'Êl síla erin lû e-govaned vîn.';
+
+//IP du l'instance AWS du serveur MySQL
 $link = new PDO(
-    'mysql:host=localhost;dbname=testaws;charset=utf8mb4',
+    'mysql:host=54.171.240.167;dbname=testaws;charset=utf8mb4',
     'root',
     'root'
 );
