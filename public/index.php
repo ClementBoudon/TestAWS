@@ -10,9 +10,9 @@ $string .= 'Êl síla erin lû e-govaned vîn.';
 
 //IP du l'instance AWS du serveur MySQL
 $link = new PDO(
-    'mysql:host=54.171.240.167;dbname=testaws;charset=utf8mb4',
+    'mysql:host=servermysql01.canh5kqqhvfp.eu-west-1.rds.amazonaws.com;dbname=testaws;charset=utf8mb4',
     'root',
-    'root'
+    'rootroot'
 );
 
 $handle = $link->prepare('insert into TestTable (body) values (?)');
